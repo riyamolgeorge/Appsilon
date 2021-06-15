@@ -6,8 +6,8 @@ It calculates the shortest distance between 2 points using distHaversine functio
 Additionally it calculates the duration in which this longest distance is covered.Also the dashboard has useful indicators from dataset which says which country flag the vessel carries and the speed (in knots).
 The data is loaded once and can be processed for many different combinations of vessel type and vessel name which helps in better performance.
 
-Challenges:
-** Data Load with read_csv is a bit slow.
+**Challenges:**
+Data Load with read_csv is a bit slow.
  Initial load can be improved further with fread(code commented). 
  However shinyapps.io have difficulty with integer64 format and additional 'bit64' package loading to address that lead to masking of many important functions from base and dplyr package. So that performance optimization stands discarded for this version.
 
